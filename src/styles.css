@@ -1,0 +1,59 @@
+:root {
+  --bluePrimary: rgb(65, 88, 208);
+  --blueSecondary: #2e3191;
+  --redPrimary: #fd4349;
+  --redSecondary: #c20309;
+}
+
+#header-nav a {
+  text-transform: uppercase;
+  color: var(--bluePrimary);
+  font-weight: bold;
+  text-decoration: none;
+  transition-duration: 0.4s;
+
+  &:hover {
+    color: var(--redPrimary);
+  }
+}
+
+.socialMediaIcon{
+  filter: brightness(95%);
+
+  &:hover{
+    filter: brightness(100%);
+  }
+}
+
+.blue-gradient-bar {
+  background: linear-gradient(var(--bluePrimary), var(--blueSecondary));
+  color: white;
+}
+
+.divider {
+  background: linear-gradient(270deg, var(--redPrimary), var(--redSecondary));
+  height: 2vh;
+}
+
+.text-blue-highlight {
+  color: var(--bluePrimary);
+  text-transform: uppercase;
+}
+
+#contact {
+  background: linear-gradient(270deg, var(--redPrimary), var(--redSecondary));
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.font-bold-shadow{
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgb(86, 86, 86);
+}
+
+/* OVERRIDING BOOTSTRAP */
+.list-group {
+  --bs-list-group-border-radius: none;
+}

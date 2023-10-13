@@ -1,0 +1,13 @@
+<main>
+  <img class="w-100" ng-src="{{bannerSlide.imgSrc}}" alt="{{bannerSlide.alt}}">
+  
+  <div class="px-5 py-3">
+    <h2 class="text-blue-highlight">PRESENTE EM CADA FASE DO CRESCIMENTO</h2>
+    <div class="d-flex">
+      <figure ng-repeat="educationLevel in educationLevelList">
+        <img class="img-fluid" src="{{educationLevel.imgSrc}}" alt="{{educationLevel.name}}">
+        <figcaption class="text-center">{{educationLevel.name}}</figcaption>
+      </figure>
+    </div>
+  </div>
+</main>

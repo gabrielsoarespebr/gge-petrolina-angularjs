@@ -1,0 +1,26 @@
+<header>
+  <div class="blue-gradient-bar d-flex justify-content-end py-1 pe-3">
+    <ul class="list-unstyled list-group list-group-horizontal gap-3">
+      <li ng-repeat="socialMedia in socialMediaList">
+        <a href="{{socialMedia.linkSrc}}" target="_blank"
+          ><img
+            class="socialMediaIcon"
+            src="{{socialMedia.imgSrc}}"
+            alt="{{socialMedia.name}}"
+            title="{{socialMedia.name}}"
+        /></a>
+      </li>
+    </ul>
+  </div>
+  <div class="px-4 py-3 d-flex justify-content-between align-items-center">
+    <img src="assets/ggePetrolinaLogoPNG.png" alt="GGE Petrolina Logotipo" />
+    <nav id="header-nav">
+      <ul class="list-unstyled list-group list-group-horizontal gap-5">
+        <li><a href="#/!">Início</a></li>
+        <li><a href="#!about">Sobre</a></li>
+        <li><a href="#!contact">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="divider">&nbsp;</div>
+</header>

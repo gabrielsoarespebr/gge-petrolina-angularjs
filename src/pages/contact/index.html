@@ -1,0 +1,50 @@
+<main class="px-5 pt-3 pb-4 d-flex flex-column justify-content-center">
+  <div class="w-50 m-auto p-4 rounded" id="contact">
+    <h2 class="text-center text-white">CONTATO</h2>
+
+    <form class="d-flex flex-column gap-2" name="contactForm">
+      <select
+        class="form-control"
+        ng-options="department.name for department in departmentList"
+        ng-model="message.department"
+        required
+      >
+        <option value="">Selecione o setor</option>
+      </select>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Nome completo"
+        ng-model="message.author"
+        required
+      />
+      <input
+        class="form-control"
+        type="email"
+        placeholder="E-mail"
+        ng-model="message.email"
+        required
+      />
+      <input
+        class="form-control"
+        type="text"
+        placeholder="DDD + Telefone"
+        ng-model="message.phone"
+        required
+      />
+
+      <textarea
+        style="resize: none"
+        class="form-control"
+        rows="4"
+        placeholder="Mensagem"
+        ng-model="message.body"
+        required
+      ></textarea>
+
+      <button class="form-control" ng-click="sendMessage(message)" ng-disabled="contactForm.$invalid">
+        ENVIAR
+      </button>
+    </form>
+  </div>
+</main>

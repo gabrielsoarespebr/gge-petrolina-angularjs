@@ -1,0 +1,42 @@
+<main class="px-5 py-3">
+  <h2 class="text-blue-highlight">Sobre</h2>
+
+  <div class="d-flex">
+    <ul class="list-unstyled col-2">
+      <li
+        class="cursor-pointer font-bold-shadow bg-info text-white p-2"
+        ng-click="chooseAboutOption(0)"
+      >
+        MISSÃO
+      </li>
+      <li
+        class="cursor-pointer font-bold-shadow bg-primary text-white p-2"
+        ng-click="chooseAboutOption(1)"
+      >
+        VISÃO
+      </li>
+      <li class="cursor-pointer font-bold-shadow bg-danger text-white p-2" ng-click="chooseAboutOption(2)">VALORES</li>
+    </ul>
+    <p
+      class="text-center d-flex align-items-center col-10 font-bold-shadow bg-info text-white p-2"
+      ng-show="aboutOption === 0"
+    >
+      MISSÃO: O Colégio GGE tem como missão preparar os alunos para CONQUISTAREM
+      SEUS SONHOS, através de um MODELO DE ENSINO INOVADOR e conectado com as
+      mudanças na educação.
+    </p>
+    <p
+      class="text-center d-flex align-items-center col-10 font-bold-shadow bg-primary text-white p-2"
+      ng-show="aboutOption === 1"
+    >
+      VISÃO: Preparar alunos para competir no MUNDO. Criar ambiente CONECTADO
+      com as mudanças MELHORAR a educação no Brasil. Quebrar PARADIGMAS na
+      educação.
+    </p>
+    <p class="text-center d-flex justify-content-center align-items-center col-10 font-bold-shadow bg-danger text-white p-2" ng-show="aboutOption === 2">
+      VALORES: Qualidade. Inovação. Ética. Cidadania. Disciplina.
+    </p>
+  </div>
+
+  <img class="img-fluid" src="assets/schoolBoy.jpg" alt="" />
+</main>
